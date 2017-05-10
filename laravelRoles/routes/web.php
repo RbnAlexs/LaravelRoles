@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('entrar',[
-	'uses' => 'Controller@showLogin',
-	'as' => 'login'
-	]);
+//Route for login users
+Auth::routes(); 
+
+Route::get('/home', 'HomeController@index')->name('home');
