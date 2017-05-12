@@ -9,6 +9,7 @@
 
                 <div class="panel-body">
                     {{ Auth::user()->email }}
+                    
                 </div>
             </div>
         </div>

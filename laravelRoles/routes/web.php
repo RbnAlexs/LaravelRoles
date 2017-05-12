@@ -18,4 +18,10 @@ Route::get('/', function () {
 //Route for login users
 Auth::routes(); 
 
-Route::get('/home', 'HomeController@index')->name('home');
+$router->get('/home', [
+    'as' => 'home',
+    'middleware' => 'role:admin',
+    'uses' => 'HomeController@index',
+]);
+
+//Route::get('/home', 'HomeController@index')->name('home');

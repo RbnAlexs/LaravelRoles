@@ -19,14 +19,6 @@ class LoginController extends Controller
     |
     */
 
-    public function getLogin(){
-        return view('login');
-    }
-
-
-    public function postLogin(){
-        return view('/');
-    }
 
 
 

@@ -11,7 +11,4 @@ use View;
 class Controller extends BaseController{
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function showLogin(){
-    	return view('login');
-    }
 }
